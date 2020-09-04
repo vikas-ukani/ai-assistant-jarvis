@@ -1,12 +1,11 @@
 import pyttsx3
-import datetime
-import speech_recognition as sr
-import wikipedia
-import smtplib
-import webbrowser as wb
+import datetime # work with current system date time packages.
+import speech_recognition as sr # speach to text library  # pip install SpeechRecognition
+import wikipedia # To Search From Wikipedia website.
+import smtplib # To send mail to other users
+import webbrowser as wb #  searching from websites
 
-#from utils import *
-
+# from utils import *
 
 engine = pyttsx3.init()  # object creation
 engine.setProperty('rate', 210)     # setting up new voice rate
@@ -14,19 +13,31 @@ engine.setProperty('rate', 210)     # setting up new voice rate
 engine.setProperty('voice', engine.getProperty('voices')[1].id)
 
 
+
 def speak(audio):
+    """
+    Function for Speaking from computer
+    """ 
     print(audio)
     engine.say(audio)
     engine.runAndWait()
 
 
 def time():
+    """    
+    Show the system current date and time and Speak 
+    """
+    
     Time = datetime.datetime.now().strftime("%I:%M:%S")
     speak("The current time is ")
     speak(Time)
 
 
 def date():
+    """
+    Shows the system date and speak.    
+    """
+    
     year = int(datetime.datetime.now().year)
     month = int(datetime.datetime.now().month)
     date = int(datetime.datetime.now().day)
@@ -38,6 +49,10 @@ def date():
 
 
 def wishhing():
+    """
+     First Wishing.
+    """
+    
     speak("Welcome sir,")
     time()
     speak("jarvis at your service, how can i help you")

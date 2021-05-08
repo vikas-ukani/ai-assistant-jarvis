@@ -10,4 +10,4 @@ Here is the course Link [Learn To Create AI Assistant (JARVIS) With Python](http
 
 
 And The Certificate of this course here.
- ![Learn To Create AI Assistant (JARVIS) With Python](Learn To Create AI Assistant (JARVIS) With Python.jpg)
+ ![Learn To Create AI Assistant (JARVIS) With Python](Learn-To-Create-AI-Assistant-JARVIS-With-Python.jpg)
